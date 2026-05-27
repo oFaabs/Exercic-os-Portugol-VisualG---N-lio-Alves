@@ -1,0 +1,42 @@
+Algoritmo "Negativos"
+
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Nelio alves
+// Descrição   : Faça um programa que leia um número inteiro positivo N (máximo = 10) e depois N números inteiros
+e armazene-os em um vetor. Em seguida, mostrar na tela todos os números negativos lidos.
+// Autor(a)    : Fabricio Cavalcanti Lima
+// Data atual  : 26/05/2026
+
+Var
+
+N, i : inteiro
+vet : vetor [0..10] de real
+x : real
+
+Inicio
+
+escreva("Quantos numeros voce vai digitar? ")
+leia(N)
+
+para i de 0 ate N - 1 faca
+
+   escreva("Digite um numero:")
+   leia(x)
+
+   vet[i] <- X
+ 
+fimpara
+
+escreval()
+escreval("NUMEROS NEGATIVOS:")
+
+para i de 0 ate N - 1 faca
+
+   se vet[i] < 0 entao
+      escrevaL(vet[i])
+   fimse
+
+fimpara
+
+
+Fimalgoritmo
