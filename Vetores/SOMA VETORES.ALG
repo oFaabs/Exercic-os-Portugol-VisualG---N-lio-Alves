@@ -1,48 +1,39 @@
-Algoritmo "SOMA VETORES"
-
+Algoritmo "Soma Vetoreas"
 // Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Nelio Alves (Udemy)
-// Descrição   : Faça um programa que leia N números reais e armazene-os em um vetor. Em seguida: - Imprimir todos os elementos do vetor - Mostrar na tela a soma e a média dos elementos do vetor
-// Autor(a)    : Fabricio Cavalcanti Lima
-// Data atual  : 27/05/2026
-
+// Professor   : Nelio Alves
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Fabricio Lima
+// Data atual  : 30/05/2026
 Var
 
-N, i : inteiro
-vet : vetor [0..9] de real
-soma, media : real
+i, N : inteiro
+
+A : vetor [0..9] de inteiro
+B : vetor [0..9] de inteiro
+soma : vetor [0..9] de inteiro
 
 Inicio
 
-soma <- 0
-
-escreva("Quantos numeros você vai digitar? ")
+escreva("Quantos valores vai ter cada vetor?")
 leia(N)
 
-para i de 0 ate N-1 faca
-
-   escreva("Digite um numero:")
-   leia(vet[i])
-
-   soma <- soma + vet[i]
- 
-fimpara
-
-escreval()
-escreva("VALORES:")
+escreval("Digite os Valores do vetor A:")
 
 para i de 0 ate N-1 faca
-
-   escreva(vet[i]:5:1)
-
+   leia(A[i])
 fimpara
 
-media <- soma / N
+escreval("Digite os Valores do vetor B:")
 
-escreval()
-escreval("SOMA: ", soma:4:2)
-escreva("MEDIA: ", media:4:2)
+para i de 0 ate N-1 faca
+   leia(B[i])
+fimpara
 
+escreval("VETOR RESULTANTE:")
 
+para i de 0 ate N-1 faca
+    escreval(B[i]+ A[i])
+fimpara
+    
 
 Fimalgoritmo
