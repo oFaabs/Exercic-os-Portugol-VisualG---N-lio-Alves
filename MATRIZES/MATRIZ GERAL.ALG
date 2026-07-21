@@ -28,26 +28,50 @@ para i de 0 ate N-1 faca
      fimpara
 fimpara
 
+escreval()
+escreva("SOMA DOS POSITIVOS:", somaPositivo:2:1)
+escreval()
 
-
-
-
+escreval()
 escreva("Escolha uma linha:")
 leia(i)
-     
+
+
 para j de 0 ate N-1 faca
-     escreva(mat[i,j], " ")
+     escreva(mat[i,j]:2:1, " ")
 fimpara
 
 escreval()
 escreva("Escolha uma coluna:")
 leia(j)
+e
 
 para i de 0 ate N-1 faca
-     escreva(mat[i,j], " ")
+     escreva(mat[i,j]:2:1, " ")
 fimpara
 
+escreval()
 
+escreva("DIAGONAL PRICINPAL: ")
+escreval()
+
+para i de 0 ate N-1 faca
+   escreva(mat[i,i]:2:1 , " ")
+fimpara
+
+escreval()
+escreval("MATRIZ ALTERADA:")
+
+para i de 0 ate N-1 faca
+     para j de 0 ate N-1 faca
+          se mat[i,j] < 0 entao
+               escreva(mat[i,j]^2:2:1, " ")
+          senao
+               escreva(mat[i,j]:2:1, " ")
+          fimse
+     fimpara
+     escreval()
+fimpara
 
 
 Fimalgoritmo
